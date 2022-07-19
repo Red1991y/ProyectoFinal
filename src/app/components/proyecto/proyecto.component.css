@@ -12,7 +12,13 @@
     text-align: justify;
 }
 
+.img-proyecto{
+    box-shadow: 10px 10px 50px #a1b5cb;
+    box-shadow: ejeX ejeY difumasion color;
+}
+
 img:hover{
     transform:scale(1.10);
 }
+
 
