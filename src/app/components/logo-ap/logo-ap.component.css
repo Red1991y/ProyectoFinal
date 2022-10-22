@@ -2,8 +2,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
 
+    /*con esto dejo fijo el logo pero taba parte del banner ver como modificar
+    o que deberia modificarse
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: blue;*/
+}
 .redes{
     margin-right: 0.5em;
 }
@@ -40,3 +46,4 @@ img {
     }
 
 }
+

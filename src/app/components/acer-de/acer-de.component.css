@@ -33,7 +33,23 @@ div {
     }
     
 }
+/*prueba de la imagen (en la foto de perfil esa es su calse la vamos a cambiar
+para realizar preubas   y pondremos class = imgPerfil)  class = "img-fluid rounded-circle" agregue lo de abajo sacar si genera
+coflictos */
+.circular--landscape {
+    display: inline-block;
+    position: static;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
 
+  .circular--landscape img {
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+  }
 
 /*etiqueta de nombre*/
 #nombre{
