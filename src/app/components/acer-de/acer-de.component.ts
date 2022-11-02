@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { personas } from 'src/app/model/persona.model';
-import { PersonaService } from 'src/app/service/persona.service';
+import { usuario } from 'src/app/model/usuario.model';
+import { UsuarioService } from 'src/app/service/usuario.service';
 
 @Component({
   selector: 'app-acer-de',
@@ -8,12 +8,12 @@ import { PersonaService } from 'src/app/service/persona.service';
   styleUrls: ['./acer-de.component.css']
 })
 export class AcerDeComponent implements OnInit {
-  personas: personas = new personas("","");
+  usuario: usuario = new usuario("","","","","","");
 
-  constructor(public personaService: PersonaService) { }
+  constructor(public usuarioService: UsuarioService) { }
 
   ngOnInit(): void {
-    this.personaService.getPersonas().subscribe(data => { this.personas = data})
+    this.usuarioService.getUsuario().subscribe(data => {this.usuario = data})
   }
   
 }

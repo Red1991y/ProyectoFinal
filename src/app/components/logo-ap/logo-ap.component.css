@@ -2,20 +2,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     /*con esto dejo fijo el logo pero taba parte del banner ver como modificar
-    o que deberia modificarse
+    o que deberia modificarse*/
     position: fixed;
     top: 0px;
     left: 0px;
-    background-color: blue;*/
+
+    /*aplicamos  un degrade*/
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
 }
+
 .redes{
-    margin-right: 0.5em;
+    margin-right: 1.5em;
 }
 
 #logoAP {
-    width: 150px;
+    width: 100px;
 }
 
 img {
@@ -46,4 +48,3 @@ img {
     }
 
 }
-

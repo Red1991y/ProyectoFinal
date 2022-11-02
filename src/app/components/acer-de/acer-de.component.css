@@ -1,9 +1,14 @@
+* {
+    
+    background: #a1b5cd;
+    
+}
 .row {
     padding: 20px;
 }
 
 div {
-    background-color:#a1b5cb;
+    
     text-align: center;
 }
 

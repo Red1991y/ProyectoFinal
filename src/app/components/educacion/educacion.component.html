@@ -1,15 +1,21 @@
 <div class="row">
     <h1>Educación</h1>
-    <div class="col-lg-1"></div>
+
+    <div class="col lg 1"></div>
     <div class="col-lg-11">
-        <ul><li><h1>Secundario</h1></li>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, soluta assumenda. Repellendus soluta rerum blanditiis aspernatur velit quas provident quasi mollitia dolorem repellat. Cumque fuga deleniti tempore minus explicabo tempora.</p>
-        </ul>
-        <ul><li><h1>Universidad</h1></li>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, soluta assumenda. Repellendus soluta rerum blanditiis aspernatur velit quas provident quasi mollitia dolorem repellat. Cumque fuga deleniti tempore minus explicabo tempora.</p>
-        </ul>
-        <ul><li><h1>Curso_Argentina Programa</h1></li>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, soluta assumenda. Repellendus soluta rerum blanditiis aspernatur velit quas provident quasi mollitia dolorem repellat. Cumque fuga deleniti tempore minus explicabo tempora.</p>
-        </ul>
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let educacion of edu">
+
+                    <td><h2>{{educacion.nombreEdu}}</h2></td>
+                    
+                    
+                    <td><h2>{{educacion.descEdu}}</h2></td>
+
+                    <td><h2>{{educacion.fecha}}</h2></td>
+ 
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>

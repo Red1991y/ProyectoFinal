@@ -1,15 +1,19 @@
 <div class="row">
-    <h1>Experiencia Laboral</h1>
-    <div class="col-lg-1"></div>
+    
+    <h1>Experiencia</h1>
+
+    <div class="col lg 1"></div>
     <div class="col-lg-11">
-        <ul><li><h1>Trabajo1</h1></li>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, soluta assumenda. Repellendus soluta rerum blanditiis aspernatur velit quas provident quasi mollitia dolorem repellat. Cumque fuga deleniti tempore minus explicabo tempora.</p>
-        </ul>
-        <ul><li><h1>Trabajo2</h1></li>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, soluta assumenda. Repellendus soluta rerum blanditiis aspernatur velit quas provident quasi mollitia dolorem repellat. Cumque fuga deleniti tempore minus explicabo tempora.</p>
-        </ul>
-        <ul><li><h1>Trabajo3</h1></li>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, soluta assumenda. Repellendus soluta rerum blanditiis aspernatur velit quas provident quasi mollitia dolorem repellat. Cumque fuga deleniti tempore minus explicabo tempora.</p>
-        </ul>
-    </div>
+    <table class="table">
+        <tbody>
+            <tr *ngFor="let experiencia of expe">
+
+                <td><h2>{{experiencia.nombreE}}</h2></td>
+                
+                <td><h3>{{experiencia.descripcionE}}</h3></td>
+             
+            </tr>
+        </tbody>
+    </table>
+</div>
 </div>

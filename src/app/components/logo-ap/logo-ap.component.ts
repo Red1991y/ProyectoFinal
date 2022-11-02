@@ -7,11 +7,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./logo-ap.component.css']
 })
 export class LogoAPComponent implements OnInit {
+  isLogged = false;
 
   constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
+
 
   login(){
     this.router.navigate(['/login'])
