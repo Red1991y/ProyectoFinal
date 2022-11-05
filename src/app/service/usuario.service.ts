@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environment } from 'src/environments/environment';
 import { usuario } from '../model/usuario.model';
 
 @Injectable({
@@ -9,18 +8,19 @@ import { usuario } from '../model/usuario.model';
 })
 
 export class UsuarioService {
-  private apiServiceUrl=environment.apiBaseUrl;
+  URL='http://localhost:8080/usuario/';
 
-  constructor(private http: HttpClient) { }
+  constructor(private httpClient : HttpClient) { }
   
   public getUsuario(): Observable <usuario>{
-      return this.http.get<usuario>(`${this.apiServiceUrl}/usuario/1`);
+      return this.httpClient.get<usuario>(this.URL + '1');
+      
     }
 
-    public updateUsuario(usuario:usuario):Observable<usuario> {
+    /*public updateUsuario(usuario:usuario):Observable<usuario> {
 
-      return this.http.put<usuario>(`${this.apiServiceUrl}/usuario/update`,usuario);
+      return this.httpClient.put<usuario>(this.URL +'usuario');
 
-    }
+    }*/
 
   }

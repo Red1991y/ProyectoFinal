@@ -1,16 +1,19 @@
 <div class="row">
-    <h1>Proyectos realizados</h1>
+    <h1>Proyecto realizados:</h1>
 
     <div class="col lg 1"></div>
-    <table class="table">
-        <tbody>
-            <tr *ngFor="let proyecto of proy">
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let proyecto of proy">
 
-                <td><h3>{{proyecto.nombreP}}</h3></td>
-
-                <td><h4>{{proyecto.descripcionP}}</h4></td>
-            </tr>
-        </tbody>
-    </table>
-
+                    <td><h2>{{proyecto.nombreP}}</h2></td>
+                    
+                    
+                    <td><h2>{{proyecto.descripcionP}}</h2></td>
+ 
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
